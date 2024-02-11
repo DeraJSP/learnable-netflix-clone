@@ -8,13 +8,14 @@
 	<script src="https://kit.fontawesome.com/90e71a60da.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="home-page">
 	<header>
 		<div class="nav">
 			<div class="logo-wrap">
-				<a href="home.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="images/logo.png" alt="">
 	   			</a>
 			    <a href="#">Ana Sayfa</a>
@@ -24,11 +25,43 @@
 			    <a href="#">Listem</a>
 			</div>
 			<div class="btn-wrap">
-	  			<select class="lang-select">
-				    <option value="en">English</option>
-				    <option value="fr">Français</option>
-	  			</select>
+	  			<i class="fa-solid fa-magnifying-glass"></i>
 				<a href="#">ÇOCUK</a>
+				<i class="bi bi-gift"></i>
+				<i class="bi bi-bell-fill"></i>
+				<img src="images/profileimg.png" class="profileimg" alt="">
+				<i class="bi bi-caret-down-fill"></i>
+			</div>
+		</div>
+
+		<div class="mobile-container">
+
+		<!-- Top Navigation Menu -->
+			<div class="topnav">
+			  <a href="index.html" class="logo">
+				<img src="images/logo.png" alt="">
+				<div>
+					<i class="bi bi-gift"></i>
+				  	<i class="bi bi-bell-fill"></i>
+				  	<i class="fa-solid fa-magnifying-glass"></i>
+			  	</div>
+	   		  </a>
+	   		  
+			  <div id="myLinks">
+			    <a href="#">Ana Sayfa</a>
+				<a href="#">Diziler</a>
+				<a href="#">Filmler</a>
+				<a href="#">Yeni ve Popüler</a>
+				<a href="#">Listem</a>
+				<div class="btn-wrap">
+				<a href="#">ÇOCUK</a>
+				<img src="images/profileimg.png" class="profileimg" alt="">
+				<i class="bi bi-caret-down-fill"></i>
+			</div>
+			  </div>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
 			</div>
 		</div>
 	</header>
@@ -36,21 +69,21 @@
 	<main>
 		<section class="hero">
 			<div class="movieinfo">
-				<img src="images/moviename.png" alt="yanimda kal">
+				<img src="images/moviename.png" alt="yanimda kal" class="yanimda">
 				<div class="moviedesc">
-					<p class="title">Türkiye’de Bugün 4 Numara</p>
+					<p class="title"><img src="images/top.png" alt="" class="top">Türkiye’de Bugün 4 Numara</p>
 					<div>
 						<p class="body">Küçük yaşta başının çaresine bakmayı öğrenen ve çok çalışarak iş dünyasında önemli bir konuma gelen Emir, bir gün sokak şarkıcısı bir kızla karşılaşır ve hayatı değişir.</p>
 					</div>
 				</div>
 				<div class="button">
-					<button class="play"><i class="fa-solid fa-play"></i> Oynat</button>
-					<button class="info"><i class="fa-regular fa-circle-info"></i>Daha Fazla Bilgi</button>
+					<button class="play"><i class="fa-solid fa-play"></i>   Oynat</button>
+					<button class="info"><i class="bi bi-info-circle"></i><span id="daha">Daha Fazla Bilgi</span></button>
 				</div>
 			</div>
 
 			<!-- Flickity HTML init -->
-			<div class="gun">
+			<div class="gun" id="popular">
 			<p class="moviescroll">Netflix'te Popüler</p>
 			<div class="gallery js-flickity"
 			  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
@@ -162,7 +195,13 @@
 	</main>
 
 	<footer>
-		<p class="phone">Questions? Call 1-844-505-2993</p>
+		<div class="social">
+			<i class="bi bi-facebook" id="sm"></i>
+			<i class="bi bi-instagram" id="sm"></i>
+			<i class="bi bi-twitter" id="sm"></i>
+			<i class="bi bi-youtube" id="sm"></i>
+		</div>
+
 		<div class="link-wrap">
 			<a href="#">FAQ</a>
 		    <a href="#">Help Center</a>
@@ -182,13 +221,21 @@
 		    <a href="#">Legal Notices</a>
 		    <a href="#">Only on Netflix</a>
 		</div>
-		<div class="lang-select-wrap">
-  			<select class="lang-select">
-			    <option value="en">English</option>
-			    <option value="fr">Français</option>
-  			</select>
+		<div class="hizmet">
+			<p>Hizmet Kodu</p>
 		</div>
-		<p class="india">Netflix India</p>
+		<p class="india">© 1997-2021 Netflix, Inc.  {i-062d573a0ee099242}</p>
 	</footer>
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+</script>
 </body>
 </html>
