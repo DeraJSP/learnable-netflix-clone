@@ -1,11 +1,15 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home page</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
+
 <body class="home-page">
 	<header>
 		<div class="nav">
@@ -13,30 +17,148 @@
 				<a href="home.html" class="logo">
 					<img src="images/logo.png" alt="">
 	   			</a>
-			    <a href="#">Search</a>
-			    <a href="#">Search</a>
-			    <a href="#">Search</a>
-			    <a href="#">Search</a>
-			    <a href="#">Search</a>
+			    <a href="#">Ana Sayfa</a>
+			    <a href="#">Diziler</a>
+			    <a href="#">Filmler</a>
+			    <a href="#">Yeni ve Popüler</a>
+			    <a href="#">Listem</a>
 			</div>
 			<div class="btn-wrap">
 	  			<select class="lang-select">
 				    <option value="en">English</option>
 				    <option value="fr">Français</option>
 	  			</select>
-				<button class="signin-btn">
-					Sign In
-				</button>
+				<a href="#">ÇOCUK</a>
 			</div>
 		</div>
 	</header>
 
 	<main>
 		<section class="hero">
-			<div class="hero-wrap">
-				
+			<div class="movieinfo">
+				<img src="images/moviename.png" alt="yanimda kal">
+				<div class="moviedesc">
+					<p class="title">Türkiye’de Bugün 4 Numara</p>
+					<div>
+						<p class="body">Küçük yaşta başının çaresine bakmayı öğrenen ve çok çalışarak iş dünyasında önemli bir konuma gelen Emir, bir gün sokak şarkıcısı bir kızla karşılaşır ve hayatı değişir.</p>
+					</div>
+				</div>
+				<div class="button">
+					<button class="play"><i class="fa-solid fa-play"></i> Oynat</button>
+					<button class="info"><i class="fa-regular fa-circle-info"></i>Daha Fazla Bilgi</button>
+				</div>
+			</div>
+
+			<!-- Flickity HTML init -->
+			<div class="gun">
+			<p class="moviescroll">Netflix'te Popüler</p>
+			<div class="gallery js-flickity"
+			  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+			 <img class="gallery-cell" src="images/amsterdam.png" alt="">
+			  <img class="gallery-cell" src="images/modern.png" alt="">
+			  <img class="gallery-cell" src="images/cook.png" alt="">
+			  <img class="gallery-cell" src="images/scissors.png" alt="">
+			  <img class="gallery-cell" src="images/matrix.png" alt="">
+			</div>
 			</div>
 		</section>
+		<section>
+			<!-- Flickity HTML init -->
+			<div class="kemal">
+				<p class="moviescroll">Kemal, İzlemeye Devam Et</p>
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+					 <img class="gallery-cell" src="images/poster1.png" alt="">
+					  <img class="gallery-cell" src="images/poster2.png" alt="">
+					  <img class="gallery-cell" src="images/poster3.png" alt="">
+					  <img class="gallery-cell" src="images/poster4.png" alt="">
+					  <img class="gallery-cell" src="images/poster5.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="gun">
+				<p class="moviescroll">Gündemdekiler</p>
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+					 <img class="gallery-cell" src="images/amsterdam.png" alt="">
+					  <img class="gallery-cell" src="images/lupin.png" alt="">
+					  <img class="gallery-cell" src="images/modern.png" alt="">
+					  <img class="gallery-cell" src="images/yani.png" alt="">
+					  <img class="gallery-cell" src="images/care.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="gun">
+				<p class="moviescroll">Netflix Orijinal İçerikleri</p>
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "freeScroll": true, "wrapAround": true }' id="gallerylong">
+					 <img class="gallery-cell" src="images/anne.png" alt="">
+					  <img class="gallery-cell" src="images/ginny.png" alt="">
+					  <img class="gallery-cell" src="images/fifty.png" alt="">
+					  <img class="gallery-cell" src="images/tribes.png" alt="">
+					  <img class="gallery-cell" src="images/icare.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="gun">
+				<p class="moviescroll">Türkiye'de Bugünün Top 10 Listesi</p>
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+				  <div class="rankwrap">
+					 <img class="gallery-cell" id="space1" src="images/1.png" alt="">
+					 <img class="gallery-cell" id="space2" src="images/nub.png" alt="">
+				  </div>
+				   <div class="rankwrap">
+					 <img class="gallery-cell" id="space1" src="images/2.png" alt="">
+					 <img class="gallery-cell" id="space2" src="images/goz.png" alt="">
+				  </div>
+				   <div class="rankwrap">
+					 <img class="gallery-cell" id="space1" src="images/3.png" alt="">
+					 <img class="gallery-cell" id="space2" src="images/ams.png" alt="">
+				  </div>
+				   <div class="rankwrap">
+					 <img class="gallery-cell" id="space1" src="images/4.png" alt="">
+					 <img class="gallery-cell" id="space2" src="images/yanimda.png" alt="">
+				  </div>
+				   <div class="rankwrap">
+					 <img class="gallery-cell" id="space1" src="images/5.png" alt="">
+					 <img class="gallery-cell" id="space2" src="images/gin.png" alt="">
+				  </div>
+			</div>
+		</section>
+
+		<section>
+			<div class="gun">
+				<p class="moviescroll">Yeniden İzle</p>
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+					 <img class="gallery-cell" src="images/mother1.png" alt="">
+					  <img class="gallery-cell" src="images/harry.png" alt="">
+					  <img class="gallery-cell" src="images/rick.png" alt="">
+					  <img class="gallery-cell" src="images/murder.png" alt="">
+					  <img class="gallery-cell" src="images/outlaw.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="gun">
+				<p class="moviescroll">Listem</p>
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+					 <img class="gallery-cell" src="images/witcher.png" alt="">
+					  <img class="gallery-cell" src="images/tarih.png" alt="">
+					  <img class="gallery-cell" src="images/orphan.png" alt="">
+					  <img class="gallery-cell" src="images/sir.png" alt="">
+					  <img class="gallery-cell" src="images/vinci.png" alt="">
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<footer>
