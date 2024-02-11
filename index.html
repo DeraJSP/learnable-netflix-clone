@@ -1,32 +1,37 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
 	<link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="home">
+	<div class="head-hero">
 	<header>
 		<div class="header-wrap">
 			<div class="logo-wrap">
 				<a href="home.html" class="logo">
 					<img src="images/logo.png" alt="">
-	   			</a>	
+	   		</a>	
 			</div>
 			<div class="btn-wrap">
-	  			<select class="lang-select">
+	  			<select class="lang-select" id="select-one">
 				    <option value="en">English</option>
 				    <option value="fr">Français</option>
 	  			</select>
-				<button class="signin-btn">
-					Sign In
-				</button>
+				<a href="sign-in.html">
+					<button class="signin-btn">
+						Sign In
+					</button>
+				</a>
 			</div>
 		</div>
 	</header>
 
-	<main>
 		<section class="hero">
 			<div class="hero-wrap">
 			<div>
@@ -47,9 +52,11 @@
 					</form>
 				</div>
 			</div>
-			<div class="line"></div>
-		</section>
+			</section>
+		</div>
 
+			<div class="line" id="lineone"></div>
+<main>
 		<section class="value-props">
 			<div class="prop-wrap one">
 				<div class="prop-desc">
@@ -61,7 +68,7 @@
 					</p>
 				</div>
 				<div class="prop-img">
-					<img src="images/luststories.png" class="value-img" alt="Lust stories">
+					<img src="images/lust.png" class="value-img" alt="Lust stories">
 				</div>
 			</div>
 
@@ -77,7 +84,7 @@
 					</p>
 				</div>
 				<div class="prop-img">
-					<img src="images/stranger-dl.png" class="value-img" alt="Lust stories">
+					<img src="images/strangerdl.png" class="value-img" alt="Lust stories">
 				</div>
 			</div>
 
@@ -93,7 +100,7 @@
 					</p>
 				</div>
 				<div class="prop-img">
-					<img src="images/stranger-dl.png" class="value-img" alt="Lust stories">
+					<img src="images/indianshow.png" class="value-img" alt="Lust stories">
 				</div>
 			</div>
 
@@ -169,12 +176,14 @@
 			<p class="cta">
 				Ready to watch? Enter your email to create or restart your membership.
 			</p>
+			<span class="second-form">
 			<div class="form-wrap">
 				<form action="/action_page.php">
 				  <input type="email" id="phone" name="phone" placeholder="Email address">
 				  <input type="submit" id="submit" value="Get Started">
 				</form>
 			</div>
+		</span>
 
 			<div class="line"></div>
 		</section>
@@ -201,12 +210,14 @@
 		    <a href="#">Legal Notices</a>
 		    <a href="#">Only on Netflix</a>
 		</div>
+		<span class="second-select">
 		<div class="lang-select-wrap">
-  			<select class="lang-select">
+  			<select class="lang-select" id="select-two">
 			    <option value="en">English</option>
 			    <option value="fr">Français</option>
   			</select>
 		</div>
+	</span>
 		<p class="india">Netflix India</p>
 	</footer>
 
