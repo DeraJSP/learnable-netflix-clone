@@ -595,7 +595,7 @@ sign-in .lang-select-wrap {
 .home-page .hero {
   width: 100%;
   height: 810px;
-  background-image: url(images/movieposter.png);
+  background-image: url("./images/movieposter.png");
   margin-top: 0;
 }
 
